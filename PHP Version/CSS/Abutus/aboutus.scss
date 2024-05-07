@@ -1,0 +1,378 @@
+@import "../style/varible";
+@import "../style/style";
+
+header {
+    background-image: url("../../Image/aboutus/bg-about-us.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+
+    div.logo {
+        .any {
+            color: #2a2b2f;
+        }
+        .gym {
+            color: #2a2b2f;
+        }
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 40px 100px;
+        z-index: 100000;
+        padding: 2%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+
+            li {
+                a {
+                }
+            }
+        }
+    }
+    .header {
+        margin: 21% 0 0 12.5%;
+        span.head {
+            margin: 0;
+            font-size: 70px;
+            line-height: 74px;
+            font-weight: 100;
+            color: #2a2b2f;
+        }
+    }
+}
+
+section.ouradvantages {
+    display: flex;
+    justify-content: center;
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10% 0;
+        width: 80%;
+        div.cont {
+            // border: 1px solid black;
+            width: 27%;
+            margin: 1%;
+            div {
+                display: flex;
+                align-items: center;
+                margin: 0 0 3% 0;
+                img {
+                    margin: 1% 0;
+                }
+                span {
+                    font-family: "Poppins", Arial, Helvetica, sans-serif;
+                    color: #2a2b2f;
+                    font-weight: normal;
+                    font-size: 18px;
+                    margin: 0 4%;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                font-family: "Open Sans", Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                color: #6b6d6f;
+                background-color: #fff;
+                -webkit-font-smoothing: antialiased !important;
+                -webkit-text-size-adjust: 100% !important;
+            }
+        }
+        .title {
+            span {
+                font-family: "Poppins", Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                font-size: 2rem;
+                color: #2a2b2f;
+            }
+        }
+    }
+}
+
+section.subscribe {
+    .content {
+        display: flex;
+        .imgsub {
+            width: 50%;
+            height: 551px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div {
+                width: 50%;
+                span {
+                    color: #2a2b2f;
+                    font-family: "Poppins", Arial, Helvetica, sans-serif;
+                    font-size: 45px;
+                    line-height: 50px;
+                    font-weight: normal;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+                    font-weight: normal;
+                    margin: 5% 0;
+                }
+                a {
+                    // position: relative;
+                    display: inline-block;
+                    background-color: transparent;
+                    border: 2px solid #c5c2c2;
+                    transition: all 0.3s ease 0s;
+                    padding: 12px 35px !important;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    letter-spacing: 0.5px;
+                    outline: none !important;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .online {
+            background-image: url("../../Image/aboutus/fes12-1.jpg");
+            div {
+                span {
+                    color: #fff;
+                }
+                p {
+                    color: #fff;
+                }
+                a {
+                    border-color: #fff;
+                    color: #fff;
+                    &:hover {
+                        color: #2a2b2f;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+        .inGym {
+            background-image: url("../../Image/aboutus/fes12-2.jpg");
+            div {
+                p {
+                    color: #2a2b2f;
+                }
+                a {
+                    border-color: #2a2b2f;
+                    color: #2a2b2f;
+                    &:hover {
+                        color: white;
+                        background-color: #2a2b2f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.ourcoaches {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .coatches {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .coatch {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .pic {
+                    border-radius: 50%;
+                    width: 23vmax;
+                    height: 23vmax;
+                    background-color: #bdbdbd;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                span {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 0;
+                    padding-top: 40px;
+                    padding-bottom: 5px;
+                    position: relative;
+                    color: #2a2b2f;
+                    font-family: "Poppins", Arial, Helvetica, sans-serif;
+                    font-weight: normal;
+                }
+                p {
+                    margin: 3% 0 5% 0;
+                    text-align: center;
+                    line-height: 25px;
+                    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+                    font-weight: normal;
+                    color: #6b6d6f;
+                }
+                .socialmedia {
+                    i {
+                        color: #6b6d6f;
+                        cursor: pointer;
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+        .main-coatches {
+            width: 90%;
+            margin: 10% 0;
+        }
+        .sub-coatches {
+            width: 80%;
+            // margin: 10% 0;
+
+            .coatch {
+                .pic {
+                    width: 15vmax;
+                    height: 15vmax;
+                }
+            }
+        }
+    }
+}
+
+section.counter {
+    background-color: #eee;
+    color: #2a2b2f;
+    width: 100%;
+    padding: 5%;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.slider {
+    background-color: #fbf18e;
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
+    .slides {
+        width: 100%;
+        // height: 500px;
+        display: flex;
+        input {
+            display: none;
+        }
+        .slide {
+            width: 500%;
+            height: 60vh;
+            transition: 2s;
+            display: flex;
+            // background-color: aqua;
+            // height: 70vh;
+            // margin: 1%;
+            // background-color: #fff;
+            justify-content: space-between;
+            img {
+                // width: 100%;
+                // height: 500px;
+            }
+        }
+        #radio1 {
+            &:checked ~ .first {
+                margin-left: 0;
+            }
+            &:checked ~ .navigation-auto .auto-btn1 {
+                background-color: aqua;
+            }
+        }
+        #radio2 {
+            &:checked ~ .first {
+                margin-left: -2050px;
+            }
+            &:checked ~ .navigation-auto .auto-btn2 {
+                background-color: aqua;
+            }
+        }
+        #radio3 {
+            &:checked ~ .first {
+                margin-left: -6000px;
+            }
+            &:checked ~ .navigation-auto .auto-btn3 {
+                background-color: aqua;
+            }
+        }
+        #radio4 {
+            &:checked ~ .first {
+                margin-left: -9000px;
+            }
+            &:checked ~ .navigation-auto .auto-btn4 {
+                background-color: aqua;
+            }
+        }
+
+        .navigation-auto {
+            position: absolute;
+            display: flex;
+            width: 800px;
+            justify-content: center;
+            margin: 460px 0 0 0;
+            div {
+                border: 2px solid #40d3dc;
+                padding: 5px;
+                border-radius: 10px;
+                transition: 1s;
+                &:not(last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+    .navigation-manual {
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        .manual-btn {
+            border: 2px solid #40d3dc;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 1s;
+            &:not(last-child) {
+                margin-right: 40px;
+            }
+            &:hover {
+                background-color: #40d3dc;
+            }
+        }
+    }
+}
+
+.sticky {
+    padding: 5px 100px;
+    background: rgb(255, 255, 255);
+    ul {
+        li {
+            a {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="CSS/contact/contact.css">
+
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="any">Any</span><span class="gym">GYM</span><img src="IMAGE/aboutus/dumbbell_black.png"
+                    alt="GYM_Logo" width="40px" height="50px">
+            </div>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <span class="head">Contact</span>
+            <div class="bath"><a href="index.php">home</a> / <span>Contact</span></div>
+        </div>
+    </header>
+
+    <section class="google-Map" id="map">
+
+    </section>
+
+    <section class="info-contact">
+        <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+                <span class="title"> Address </span>
+                <p class="info">Tripoli - Ghoot-alshaal</p>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <div>
+                <span class="title"> Email </span>
+                <p class="info">info@anygym.com</p>
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-phone"></i>
+            <div>
+                <span class="title"> Call Us </span>
+                <p class="info"> +218-910000000 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="leave-msg">
+        <span>Leave a message</span>
+        <form action="">
+            <div>
+                <label for="">Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email">
+            </div>
+            <div class="msg">
+                <label for="">Message</label>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+            </div>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+</body>
+<script>//header
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+
+
+    //map
+
+    function initMap() {
+        var location = { lat: 32.825942, lng: 13.156956 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: location
+        });
+        var marker = new google.maps.marker({
+            position: location,
+            map: map
+        });
+    }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/js?key=AIzaSyAU-HtbTxutTKcpeyHOizLH6eSxu8hP_Dg=initMap"></script>
+
+</html>
