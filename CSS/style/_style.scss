@@ -1,0 +1,101 @@
+$direction: ltr;
+
+@if $direction == ltr {
+    $floatleft: left;
+    $floatright: right;
+} @else {
+    $floatleft: right;
+    $floatright: left;
+}
+
+@for $i from 1 through 16 {
+    .class#{$i} {
+        font-size: large;
+    }
+}
+
+// $sociallist: facebook twitter youtube linkedin codepen;
+
+@each $social, $color, $hover in (facebook, blue, black), (twitter, green, purple), (youtube, orange, green),
+    (linkedin, red, blue), (codepen, gray, pink), (instagram, pink, black)
+{
+    .icon-#{$social} {
+        background: url("img/image_#{$social}.png");
+        color: $color;
+        border: 1px solid $color;
+        &:hover {
+            background-color: $hover;
+        }
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+::selection{
+    background-color: #ffea00;
+    color: #2a2b2f;
+}
+div.logo {
+    display: flex;
+    justify-content: baseline;
+    .any {
+        color: #ebd9c3;
+        font-size: 2.5rem;
+        font-family: $Font;
+    }
+    .gym {
+        color: #d8b48a;
+        font-weight: bold;
+        font-size: 2.5rem;
+        font-family: $Font;
+    }
+    img {
+        transform: rotate(20deg);
+        margin: 2% 0 0 2%;
+    }
+}
+a {
+    text-decoration: none;
+    color: #6b6d6f;
+    &:hover {
+        color: #2a2b2f;
+    }
+}
+nav {
+    ul {
+        li {
+            list-style: none;
+            a {
+                color: #2a2b2f;
+                padding: 38px 3px 5px 3px;
+                &:hover {
+                    border-bottom: 1px solid rgba(45, 78, 83, 1);
+                }
+                &:focus {
+                    color: #2a2b2f;
+                    border-bottom: 1px solid rgba(45, 78, 83, 1);
+                }
+            }
+        }
+    }
+}
+input[type="text"],
+[type="password"],
+[type="email"],textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+input,
+textarea,
+button {
+    &:focus {
+        outline: none;
+    }
+}

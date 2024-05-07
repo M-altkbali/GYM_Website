@@ -1,0 +1,11 @@
+@mixin borderR($r) {
+    border-radius: $r;
+}
+@mixin BoxShadow {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@mixin Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
